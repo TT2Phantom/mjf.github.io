@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <title>
+    Home - MJF Foundation  
+    </title>
+    <link rel="stylesheet" href="style.css">
+<body>
+<header>
+    <h1>
+        MJF Foundation    
+    </h1>
+    <h4>
+    Providing you with the finest tea for 75 years!
+    </h4>
+</header>
+<section>
+    <div class="welcome">
+    
+    <h2>
+    Welcome
+    </h2>
+    <p>
+    We provide you with top quality tea. From the farm to cup, our tea always has the authentic quality that is loved by millions.
+    </p>
+    </div>
+    <br>
+    <br>
+    <div class="image2">
+    
+    <h2>
+    About Us
+    </h2>
+    <p>
+    For 75 years MJF have provided our consumers with the tea they love and enjoy. Founded in 1970, Merrill had a dream of owning his own tea company because he wanted to provide consumers with the best tasting tea.
+    <p>
+        <br>
+        <br>
+        <h2>
+            Our Team
+        </h2>
+    <section class="container">
+    <article class="card">
+        <div class="icons">
+            &#x1F60E;
+             <h3>David Mukhura</h3>
+            <img src="images/fakeprofile.jpg" width="183" height="275">
+            <p> Tea taster for 20 years</p>
+             <button onclick="mailto:david.m@gmail.com">Contact</button>
+        </div>
+        </article>
+        <article class="card">
+        <div class="icons">
+            &#x1f61b;
+             <h3>Dover Hershy</h3>
+            <img src="images/profile-placeholder.png"  width="283" height="275">
+            <p> Marketing</p>
+             <button onclick="mailto:dover.m@gmail.com">Contact</button>
+        </div>
+        </article>
+        <section class="blue container" >
+        
+        <article class="card">
+    <div class="icons">&#9749;
+    <h3>
+        
+        Sub title
+        </h3>    
+    <p> ....text..
+        
+        </p>
+        <button>Learn More</button>
+        </div>    
+        
+        
+    </article>
+         <article class="card">
+    <div class="icons">&#9749;
+    <h3>
+        
+        Sub title
+        </h3>    
+    <p> ....text..
+        
+        </p>
+        <button>Learn More</button>
+        </div>    
+        
+        
+    </article>
+    </section>
+                </section>
+
+        <br>
+        <br>
+            </div>
+    <br>
+    <br>
+<div class="image3">
+        <h2>
+    Reviews
+    </h2>
+    <div id="reviews">
+        <q>
+        The best tasting tea in the world!!! - Donald Trump
+        </q>
+        <br><br>
+    <q>
+    The finest tea by MJF - Annoynomus
+        </q>
+        <br><br>
+    </div>
+    <br>
+    <br>
+    
+    <script>
+        
+function myFunction() {
+  var txt;
+  var person = prompt("Enter your email address Below:");
+  if (person == null || person == "") {
+    //no input
+  } else {
+    alert("Thank you. You are now signed up to our fake daily newsletter")
+  }
+}
+     
+        function placeOrder() {
+        var orderForm = document.getElementById("my-form");
+        results = "<h3>Success!</h3> Here is your order.";
+        results += "<br>Name: " + orderForm.elements["my-name"].value;
+        results += "<br>Address: " + orderForm.elements["my-address"].value;
+        results += "<br>I would like to order: " + orderForm.elements["my-drink"].value;
+        results += "<br>Quantity: " + orderForm.elements["my-qty"].value;
+        var orderResults = document.getElementById("my-order");
+        orderResults.style.display = "block";
+        orderResults.innerHTML = results;
+        
+    }
+        
+</script>
+    <br>
+    <br> 
+    <section class="container">
+    </section>
+    <section>
+    <h2>MY ORDER FORM: </h2>
+            <form id="my-form">
+         <table>
+    <tr>
+    <td> Name: </td>
+    <td><input type="text" size="25" name="my-name"></td>
+    </tr>
+    <tr>
+    <td> Address: </td>    
+    <td><input type="text" size="25" name="my-address"></td>
+    </tr>
+    <tr>
+    <td> Favourite drink: </td>    
+    <td><select name="my-drink">
+        <option> Milk </option>
+        <option> Coffee </option>
+        <option> Tea </option>
+        </select>
+        </td>    
+    </tr>
+    <tr>
+    <td> Quantity: </td>    
+    <td><input type="number" name="my-qty" value="1" min="1" max="5">
+        
+        <small>(max 5)</small>
+        </td>
+    </tr>
+    <tr>
+    <br>         
+    </tr>
+    <tr>
+        <td colspan="2">
+        <input class="button "type="button" value="Process Order" onclick="placeOrder()">
+        <input class="button "type="reset" value="Clear">
+        </td>
+    </tr>
+    </table>
+    </form>
+
+    <br>
+    <div id="my-order">
+        
+    </div>
+        <br>
+        <br>
+</section>  
+    <div class="footer">
+        <h3> Thanks for Visiting. </h3>
+        <div class="container">
+        <article class="card">
+            <h3> Get in Touch</h3>
+            <p> Probably the best place to buy tea in all of Joburg.</p>
+            </article>
+        <article class="card">
+            <h3> Contact Us: </h3>
+            <p>We would love to hear from you</p>
+            <br>Call or email us.<br>
+            Mobile: 02901300193 //
+            Tel: 021 323 894
+            </article>
+            
+        </div>
+        <li><a href="" onclick="myFunction()">Sign Up to NewsLetter</a></li> <br>
+        
+        &copy; Copyright 2021 MJF Foundation
+</div>
+</body>
+</html>

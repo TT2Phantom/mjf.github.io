@@ -1,0 +1,101 @@
+body {
+font-family: tahoma;
+text-align: centre;
+}
+
+header{
+letter-spacing: 6px;
+background: royalblue;
+padding: 20px;
+color: white;
+text-align: center;     
+}
+
+h2{
+font-size: 2em;
+width: 100%;
+}
+
+section {
+text-align: center;
+margin-bottom: 40px;
+padding: 0.5px;
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+}
+.card {
+    border: 1px solic #ccc;
+    background-color: seagreen;
+    margin: 25px;
+    padding: 25px;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.3);
+}
+    @media screen and (min-width: 50em) {
+    .card {
+        flex-basis: 325px;
+    }
+    header h1 {
+        font-size: 5em;
+    }
+}
+.image2 {
+    background-image: url(images/tea3.jpg);
+    padding: 18px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;   
+}
+.button, .container {
+    margin: 10px;
+}
+button, .button {
+    background: royaleblue;
+    border: 0;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+q {
+    background-color: gray;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+.blue {
+    background-color: teal;
+}
+td {
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+}
+
+.t01 {
+    width: 100%;
+    background-color: #f1f1c1;
+}
+#my-order {
+    background-color: #29C1C4;
+    padding: 25px;
+    display: none;
+}
+
+.footer {
+    padding: 30px;
+    background: gray;
+    width: auto;
+    height: auto;
+}
+.reviews {
+   margin: 10px;
+}
+li {
+    list-style-type: none;
+}
